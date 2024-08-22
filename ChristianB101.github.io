@@ -8,6 +8,7 @@
 <body>
 <h1>Welcome to My Personal Webpage</h1>
 <p>This is a work in progress. Check back soon for updates!</p>
+  <p> My Name is Christian Bowen rising sophomore at Lincoln University of PA. Born and raised in Brooklyn, NY</p>
 </body>
 </html>
 1
