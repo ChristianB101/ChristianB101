@@ -3,187 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Bowen - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: #fff;
-            margin-top: 20px;
-        }
-        .download-link {
-            display: inline-block;
-            padding: 10px 15px;
-            margin: 10px 0;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Christian Bowen</h1>
-        <p>Welcome to my Personal Website!</p>
+        <nav>
+            <a href="#home" class="logo">MyPortfolio</a>
+            <button id="theme-toggle">Toggle Theme</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#blog">Blog/Articles</a>
-        <a href="#contact">Contact</a>
-        <a href="#resume">Resume/CV</a>
-        <a href="#interests">Interests/Hobbies</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#awards">Awards and Honors</a>
-        <a href="#goals">Future Goals</a>
-        <a href="#social">Social Media</a>
-    </nav>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="intro">
+                <h1><span id="typing-effect"></span></h1>
+                <p>Welcome to my professional portfolio. Explore my projects, skills, and more!</p>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I’m Christian Bowen, a Computer Science major, attending Lincoln University of PA. Growing up in a single mother household my mom tried her best to keep her two sons and daughter out of the streets and socially rounded</p>
-        <p>I was a video game fanatic usually playing NBA 2k, Madden, or Call of Duty. The weekends were my time to unload and talk to my friends from sunrise to sundown. Until my mom curelly signed me up for a coding class at Medgar Evers College in Brooklyn, NY</p>
-        <p>Waking up as early as 8am to go to coding class was a punishment. Cutting into my gaming time, just to wake up early to look at a screen of random characters and letters?...I was miserable and confused every morning yet I continued to push through.</p>
-        <p>As time went on learning HTML I got familiar and started to excell. I ended finsihing the program with honors and my passion for coding and web development blossomed.</p>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="search-filter">
+                <input type="text" id="project-search" placeholder="Search projects...">
+                <select id="project-filter">
+                    <option value="all">All</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">Design</option>
+                    <option value="data">Data Analysis</option>
+                </select>
+            </div>
+            <div class="project-grid">
+                <!-- Example Projects -->
+                <div class="project-item" data-category="web">
+                    <h3>Web Project 1</h3>
+                    <p>Description of web project.</p>
+                </div>
+                <div class="project-item" data-category="design">
+                    <h3>Design Project 1</h3>
+                    <p>Description of design project.</p>
+                </div>
+                <div class="project-item" data-category="data">
+                    <h3>Data Project 1</h3>
+                    <p>Description of data project.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>In progression of a bachelor's in Computer Science, Lincoln University of PA, 2027</p>
-        <p>Currently abtaining a 3.8 GPA, and Deans List 2x</p>
-        <p>My relevent course work Computer Programming I, Computer Programming II, Web Design and Development, Code Path Web Design certification.</p>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-chart">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="bar" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="bar" style="width: 70%;"></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, HTML</li>
-            <li>Tools: Git </li>
-            <li>Other skills: Web Development, Data Analysis</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <p><strong>Project 1:</strong> This is a work in progress check in soon for updates!<a href="#">Link to project</a></p>
-        <p><strong>Project 2:</strong> This is a work in progress check in soon for updates! <a href="#">Link to project</a></p>
-        <p><strong>Project 3:</strong> This is a work in progress check in soon for updates! <a href="#">Link to project</a></p>
-    </section>
-
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <p><strong>Internship/Job Title:</strong> Jackie Robinson Foundation, 2024 - Current</p>
-        <p><strong>Internship/Job Title:</strong> Intergenerational Change Initiative, 2021</p>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <p>Copper Grounding and Bonding, 2023</p>
-        <p>Code Path Webdesign, 2024</p>
-    </section>
-
-    <section id="blog">
-        <h2>Blog/Articles</h2>
-        <p>This is a work in progress check in soon for updates.</p>
-        <p><a href="#">Blog Post 1</a></p>
-        <p><a href="#">Blog Post 2</a></p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:christian.bowen@lions.lincoln.edu">christian.bowen@lions.lincoln.edu</a></p>
-        <p>LinkedIn: <a href="#">www.linkedin.com/in/christian-bowen-3065a729a</a></p>
-    </section>
-
-    <section id="resume">
-        <h2>Resume/CV</h2>
-        <a href="resume.pdf" class=https://1drv.ms/w/c/2d23a49d8828d232/ETLSKIidpCMggC2RPgAAAAABwtiqNMvsE58Yih4xawW9aw?e=n1tmHG download>Download Resume</a>
-    </section>
-
-    <section id="interests">
-        <h2>Interests/Hobbies</h2>
-        <p>I enjoy painting and expressing myself through art in my free time.</p>
-    </section>
-
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p>This is a work in progress please check in soon for updates</p>
-        <p>This is a work in progress please check in soon for updates</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Check out my work: work in progress</a></p>
-    </section>
-
-    <section id="awards">
-        <h2>Awards and Honors</h2>
-        <p>Deans List, 2023</p>
-        <p>Deans List, 2024</p>
-    </section>
-
-    <section id="goals">
-        <h2>Future Goals</h2>
-        <p>I aim to take more initiative in my investments to make a livable profit.</p>
-        <p>Becoming a game designer/DEV team , and creating a new software to improve the way we scan motor vehicless to see what errors or things that need to be fixed</p>
-    </section>
-
-    <section id="social">
-        <h2>Social Media Links</h2>
-        <p>LinkedIn: <a href="#">www.linkedin.com/in/christian-bowen-3065a729a</a></p>
-        <p>GitHub: <a href="#">ChristianB101</a></p>
-        <p>Twitter: <a href="#">N/A</a></p>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Christian Bowen All rights reserved.</p>
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
+
