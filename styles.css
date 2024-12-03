@@ -1,1 +1,80 @@
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --background-color: #fff;
+    --dark-bg: #121212;
+    --dark-text: #e0e0e0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.skills-chart .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skills-chart .bar {
+    height: 10px;
+    background: var(--primary-color);
+    margin-left: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project-item {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+}
 
