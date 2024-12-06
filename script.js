@@ -23,10 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     typePhrase();
 
     // Theme toggle
-    const themeToggle = document.getElementById("theme-toggle");
-    themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-    });
+   const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});
+
 
     // Dynamic project filtering
     const projectFilter = document.getElementById("project-filter");
