@@ -1,24 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Typing effect for headline
+    // Typing effect for the headline
     const typingEffect = document.getElementById("typing-effect");
     const phrases = ["Welcome!", "Explore My Projects", "Learn About Me"];
     let currentPhraseIndex = 0;
     let currentCharIndex = 0;
 
-    const text = "Christian Bowen - Aspiring Systems Engineer";
-let index = 0;
-const typingEffect = document.getElementById("typing-effect");
-
-function type() {
-    if (index < text.length) {
-        typingEffect.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(type, 100); // Adjust speed here
-    }
-}
-window.onload = type;
-
-    
     function typePhrase() {
         if (currentCharIndex < phrases[currentPhraseIndex].length) {
             typingEffect.textContent += phrases[currentPhraseIndex][currentCharIndex];
@@ -33,17 +19,15 @@ window.onload = type;
             }, 2000);
         }
     }
-
     typePhrase();
 
     // Theme toggle
-   const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-});
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+    });
 
-
-    // Dynamic project filtering
+    // Project filtering
     const projectFilter = document.getElementById("project-filter");
     const projectSearch = document.getElementById("project-search");
     const projectItems = document.querySelectorAll(".project-item");
@@ -62,12 +46,11 @@ themeToggle.addEventListener('click', () => {
     projectFilter.addEventListener("change", filterProjects);
     projectSearch.addEventListener("input", filterProjects);
 
-    // Form validation
+    // Contact form validation
     const contactForm = document.getElementById("contact-form");
     contactForm.addEventListener("submit", event => {
         event.preventDefault();
-        alert("Form submitted successfully!");
+        alert("Thank you for reaching out! Your message has been sent.");
         contactForm.reset();
     });
 });
-
