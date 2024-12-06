@@ -5,5 +5,5 @@
 ✔️OSHA 10 HOUR Certified, Sigma Certified (white belt), Google HBCU Scholar<br/>
 💭Currently learning Data Structures and Q and A Testing in SD<br/>
 
-<!--Christian's GitHub Stats--!>
-https://github-readme-stats.vercel.app/api?username=ChristianB101
+<!--GitHub Stats from https://github-readme-stats.vercel.app/api?username=ChristianB101-->
+[!Christian's github stats](https://github-readme-stats.vercel.app/api?username=ChristianB101)]
