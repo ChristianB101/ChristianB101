@@ -18,14 +18,14 @@
 ## 🛠️ Skills
 - Python, Java, SQL , Oracle
 - Data Analysis & Visualization (PowerBI, Tableau, MS Excel, Matplotlib, Seaborn)  
-- Machine Learning (Scikit-learn, TensorFlow)  
-- Git, GitHub, VS Code  
+- Machine Learning
+- Git, GitHub, VS Code, Blender
 - Systems Thinking & Structured Problem Solving
 
 ## 📚 Currently Learning
-- Deep Learning & Neural Networks  
+- Operating Systems W Linux 
 - Research Methodologies in CS  
-- Cloud Platforms (AWS, Azure)
+- HCI and UX Design
 
 ## 📫 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/christian-bowen-3065a729a)  
