@@ -16,8 +16,8 @@
   Web app prototype that centralizes academic resources, tutoring, and financial aid info.
 
 ## 🛠️ Skills
-- Python, Java, SQL  
-- Data Analysis & Visualization (Pandas, Matplotlib, Seaborn)  
+- Python, Java, SQL , Oracle
+- Data Analysis & Visualization (PowerBI, Tableau, MS Excel, Matplotlib, Seaborn)  
 - Machine Learning (Scikit-learn, TensorFlow)  
 - Git, GitHub, VS Code  
 - Systems Thinking & Structured Problem Solving
